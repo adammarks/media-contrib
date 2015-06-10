@@ -88,7 +88,8 @@ namespace CustomVideoCompositor
 
         private void SetupMediaStreamSource()
         {
-            VideoDisplay.SetMediaStreamSource(_composition.GeneratePreviewMediaStreamSource((int)VideoDisplay.ActualWidth, (int)VideoDisplay.ActualHeight));
-        }
-    }
+//         VideoDisplay.SetMediaStreamSource( _composition.GeneratePreviewMediaStreamSource( (int) VideoDisplay.ActualWidth, (int) VideoDisplay.ActualHeight ) );
+         VideoDisplay.SetMediaStreamSource( _composition.GeneratePreviewMediaStreamSource( (int) 200, (int) 100 ) );
+      }
+   }
 }
